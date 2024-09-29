@@ -3,23 +3,66 @@ import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
-import thumbsup from "../assets/images/thumbsup.png";
+import portræt1 from "../assets/images/portræt1.png";
+import portræt2 from "../assets/images/portræt2.png";
+import logo_fyld from "../assets/images/logo_fyld.svg";
+import bg_billede from "../assets/images/bg_billede.svg";
+import logo from "../assets/images/logo.svg";
+import mail from "../assets/images/mail.svg";
+import mobil from "../assets/images/mobil.svg";
+import slide1 from "../assets/images/slide1.png";
+import slide2 from "../assets/images/slide2.png";
+import slide3 from "../assets/images/slide3.png";
+import slide4 from "../assets/images/slide4.png";
+import slide5 from "../assets/images/slide5.png";
+import slide6 from "../assets/images/slide6.png";
+import slide7 from "../assets/images/slide7.png";
+import slide8 from "../assets/images/slide8.png";
 ---
 
 <MainLayout title="Titel">
-  <article class="bg-beige overflow-x-hidden">
-    <section
-      class="bg-[url('/src/assets/images/bg_billede.svg')] bg-cover bg-right h-96 bg"
-    >
-      <h1 class="text-rød font-kulim text-6xl">multimediedesigner</h1>
-      <h2 class="text-mørkerød font-kulim text-4xl">Signe Aagaard Lauridsen</h2>
-
-      <img
-        class="w-[300px] mx-auto mb-34"
-        src="/src/assets/images/portræt1.png"
-        alt=""
-      />
-      <p>
+  <article class="bg-beige">
+    <section class="lg:pb-24">
+      <div class="relative w-full z-10 lg:grid lg:grid-cols-2">
+        <div>
+          <h1
+            class="text-rød font-kulim text-5xl absolute top-[6%] flex items-center justify-center pl-6 lg:text-9xl lg:pl-36 lg:pt-16 animate__animated animate__fadeInLeft"
+          >
+            multimediedesigner
+          </h1>
+          <h2
+            class="text-mørkerød font-kulim text-3xl absolute top-[15%] flex items-center justify-center pl-6 lg:text-6xl lg:pl-36 lg:pt-28 animate__animated animate__fadeInLeft"
+          >
+            Signe Aagaard Lauridsen
+          </h2>
+          <p
+            class="m-14 leading-7 hidden lg:block lg:pl-24 lg:pt-72 font-montseerat"
+          >
+            Jeg brænder for at udfolde mig kreativt og forvandle idéer til
+            visuelle fortællinger. Gennem grafisk design og visuel kommunikation
+            elsker jeg at skabe designs, der ikke blot fanger øjet, men også
+            formidler et klart budskab. Jeg arbejder med både statiske og
+            interaktive medier, hvor jeg kombinerer æstetik og funktionalitet
+            for at skabe engagerende oplevelser, der vækker følelser og
+            inspirerer. <br />
+            <br /> For mig handler design om at fortælle en historie, og jeg er altid
+            på jagt efter nye måder at bringe kreativitet og kommunikation sammen.
+          </p>
+        </div>
+        <div>
+          <Image
+            src={portræt1}
+            alt=""
+            class="w-[300px] mx-auto mb-34 h-auto pt-16 lg:w-[500px]"
+          />
+          <Image
+            src={logo_fyld}
+            alt=""
+            class="absolute top-[87%] left-[67%] w-[100px] lg:left-[85%] lg:top-[88%] lg:w-[150px] animate-spin-slow"
+          />
+        </div>
+      </div>
+      <p class="m-14 leading-7 font-montseerat lg:hidden">
         Jeg brænder for at udfolde mig kreativt og forvandle idéer til visuelle
         fortællinger. Gennem grafisk design og visuel kommunikation elsker jeg
         at skabe designs, der ikke blot fanger øjet, men også formidler et klart
@@ -29,131 +72,200 @@ import thumbsup from "../assets/images/thumbsup.png";
         <br /> For mig handler design om at fortælle en historie, og jeg er altid
         på jagt efter nye måder at bringe kreativitet og kommunikation sammen.
       </p>
+      <Image
+        src={bg_billede}
+        alt=""
+        class="absolute top-[20%] z-0 w-[1000px] h-auto left-[20%] overflow-hidden max-w-full lg:left-[25%] lg:rotate-80 lg:w-[1100px] lg:top-[1%]"
+      />
     </section>
-    <section class="mt-96">
+    <section class="">
       <div class="flex items-center w-full">
         <div class="w-28 h-2 bg-rød mr-8 grow"></div>
-        <h1 class="text-rød text-4xl mr-10">kompetencer</h1>
+        <h1 class="text-rød text-4xl mr-10 lg:text-6xl">kompetencer</h1>
       </div>
       <div>
         <img src="" alt="" />
         <img src="" alt="" />
       </div>
-      <p class="text-center">
-        Grafisk design & visuel kommunikation <br />Interaktiv design &
-        brugeroplevelse <br /> Motion graphics & animation <br
-        />Problemløsninger & konceptudvikling
+      <p
+        class="text-center m-16 leading-7 font-montseerat lg:text-xl lg:leading-10 animate__animated animate__pulse animate__infinite animate__slow"
+      >
+        Grafisk design <strong class="text-rød">&</strong> visuel kommunikation <br
+        />Interaktiv design <strong class="text-rød">&</strong> brugeroplevelse <br
+        /> Motion graphics <strong class="text-rød">&</strong> animation
+        <br />Problemløsninger <strong class="text-rød">&</strong> konceptudvikling
       </p>
+      <Image
+        src={bg_billede}
+        alt=""
+        class="absolute top-[100%] z-0 w-[1000px] h-auto right-[20%] overflow-hidden max-w-full lg:right-[55%] lg:rotate-80 lg:w-[1100px] lg:top-[110%]"
+      />
     </section>
-    <section>
-      <div class="flex items-center w-full">
-        <h1 class="text-rød text-4xl ml-10">tekniske færdigheder</h1>
+    <section class="">
+      <div class="flex items-center w-full py-6">
+        <h1 class="text-rød text-4xl ml-10 font-montseerat lg:text-6xl">
+          tekniske færdigheder
+        </h1>
         <div class="w-28 h-2 bg-rød grow ml-8"></div>
       </div>
-      <ul class="m-14">
-        <p class="text-mørkerød font-kulim text-2xl">UI/UX Design:</p>
-        <li>
-          Erfaring med design af brugergrænseflader og interaktive oplevelser i
-          Figma og Illustrator.
-        </li>
-        <li>
-          Erfaring med design af brugergrænseflader og interaktive oplevelser i
-          Figma og Illustrator.
-        </li>
-        <br />
-        <p class="text-mørkerød font-kulim text-2xl">Front-end Udvikling:</p>
-        <li>
-          HTML, CSS og Javascript-færdigheder til at udvikle webapplikationer.
-        </li>
-        <li>
-          Erfaring med CSS frameworks som Tailwind og motion libraries som
-          Motion One.
-        </li>
-        <li>
-          Brug af Astro til at bygge hurtige statiske websites og Supabase til
-          back-end integration.
-        </li>
-        <br />
-        <p class="text-mørkerød font-kulim text-2xl">Grafisk Design:</p>
-        <li>Fotoredigering i Photoshop.</li>
-        <li>Layoutdesign i InDesign</li>
-        <li>Design og tegne i Illustrator.</li>
-        <br />
-        <p class="text-mørkerød font-kulim text-2xl">
-          Prototyping & Konceptudvikling:
-        </p>
-        <li>
-          Erfaring med at udvikle og teste prototyper i Figma og Visual Studio
-          Code, samt at skabe koncepter, der bygger bro mellem design og
-          funktionalitet.
-        </li>
-      </ul>
+      <div class="lg:grid lg:grid-cols-2">
+        <ul class="m-14 lg:pl-36">
+          <p class="text-mørkerød font-kulim text-2xl">UI/UX Design:</p>
+
+          <li class="font-montseerat">
+            Erfaring med design af brugergrænseflader og interaktive oplevelser
+            i Figma og Illustrator.
+          </li>
+          <br />
+          <p class="text-mørkerød font-kulim text-2xl">Front-end Udvikling:</p>
+          <li class="font-montseerat">
+            HTML, CSS og Javascript-færdigheder til at udvikle webapplikationer.
+          </li>
+          <li class="font-montseerat">
+            Erfaring med CSS frameworks som Tailwind og motion libraries som
+            Motion One.
+          </li>
+          <li class="font-montseerat">
+            Brug af Astro til at bygge hurtige statiske websites og Supabase til
+            back-end integration.
+          </li>
+          <br />
+          <p class="text-mørkerød font-kulim text-2xl">Grafisk Design:</p>
+          <li class="font-montseerat">Fotoredigering i Photoshop.</li>
+          <li class="font-montseerat">Layoutdesign i InDesign</li>
+          <li class="font-montseerat">Design og tegne i Illustrator.</li>
+          <br />
+          <p class="text-mørkerød font-kulim text-2xl">
+            Prototyping & Konceptudvikling:
+          </p>
+          <li class="font-montseerat">
+            Erfaring med at udvikle og teste prototyper i Figma og Visual Studio
+            Code, samt at skabe koncepter, der bygger bro mellem design og
+            funktionalitet.
+          </li>
+        </ul>
+        <Image
+          src={logo}
+          alt=""
+          class="hidden lg:block lg:w-[300px] lg:ml-72 lg:mt-28 lg:animate-spin-slow"
+        />
+      </div>
+      <Image
+        src={bg_billede}
+        alt=""
+        class="absolute top-[170%] z-0 w-[1000px] h-auto left-[45%] rotate-180 overflow-hidden max-w-full lg:hidden"
+      />
     </section>
     <section>
-      <div class="flex items-center w-full">
+      <div class="flex items-center w-full py-8">
         <div class="w-28 h-2 bg-rød mr-8 grow"></div>
-        <h1 class="text-rød text-4xl mr-10">tidligere arbejde</h1>
+        <h1 class="text-rød text-4xl mr-10 lg:text-6xl">tidligere arbejde</h1>
       </div>
-      <div class="flex overflow-x-scroll pb-10 hide-scroll-bar">
+      <div class="flex overflow-x-scroll pb-10 hide-scroll-bar my-8">
         <div class="flex flex-nowrap lg:ml-40 md:ml-20 ml-10">
           <div class="inline-block px-3">
             <div
               class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
-              <img src="/src/assets/images/slide1.png" alt="" />
+              <Image
+                src={slide1}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
+
+              <p></p>
+            </div>
+          </div>
+
+          <div class="inline-block px-3">
+            <div
+              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <Image
+                src={slide2}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
             </div>
           </div>
           <div class="inline-block px-3">
             <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
+              <Image
+                src={slide3}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
             </div>
           </div>
           <div class="inline-block px-3">
             <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
+              <Image
+                src={slide4}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
+            </div>
+          </div>
+
+          <div class="inline-block px-3">
+            <div
+              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+            >
+              <Image
+                src={slide5}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
             </div>
           </div>
           <div class="inline-block px-3">
             <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
+              <Image
+                src={slide6}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
             </div>
           </div>
           <div class="inline-block px-3">
             <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
+              <Image
+                src={slide7}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
             </div>
           </div>
           <div class="inline-block px-3">
             <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+              class="h-auto rounded-lg bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
             >
-            </div>
-          </div>
-          <div class="inline-block px-3">
-            <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
-            </div>
-          </div>
-          <div class="inline-block px-3">
-            <div
-              class="w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+              <Image
+                src={slide8}
+                alt=""
+                class="w-[500px] h-64 max-w-xs overflow-hidde"
+              />
             </div>
           </div>
         </div>
       </div>
     </section>
     <section>
-      <div class="flex items-center w-full">
-        <h1 class="text-rød text-4xl ml-10">programmer</h1>
+      <div class="flex items-center w-full py-6">
+        <h1 class="text-rød text-4xl ml-10 lg:text-6xl">programmer</h1>
         <div class="w-28 h-2 bg-rød grow ml-8"></div>
       </div>
-      <div class="grid grid-cols-2 m-14 justify-items-center">
+      <div
+        class="grid grid-cols-2 mx-16 my-16 justify-items-center text-mørkerød lg:text-xl lg:leading-10 lg:mx-[30%] animate__animated animate__pulse animate__infinite animate__slow font-montseerat"
+      >
         <ul>
           <li>Illustrator</li>
           <li>Figma</li>
@@ -171,30 +283,60 @@ import thumbsup from "../assets/images/thumbsup.png";
         </ul>
       </div>
     </section>
-    <section>
-      <div class="flex items-center w-full">
+    <section class="lg:pb-20">
+      <div class="flex items-center w-full py-6">
         <div class="w-28 h-2 bg-rød mr-8 grow"></div>
-        <h1 class="text-rød text-4xl mr-10">kontakt mig</h1>
+        <h1 class="text-rød text-4xl mr-10 lg:text-6xl">kontakt mig</h1>
       </div>
-      <img
-        class="w-[300px] mx-auto"
-        src="/src/assets/images/portræt2.png"
-        alt=""
-      />
-      <p class="text-mørkerød m-10">
-        Jeg ser frem til muligheden for at få indblik i jeres virksomheds
-        arbejdsmiljø gennem et praktikforløb. Det vil give mig en god chance for
-        at lære nyt og udvikle mig, samtidig med at jeg kan bidrage med de
-        kvalifikationer, jeg allerede besidder. Hvis I ser mine kompetencer som
-        en værdi for jeres team, hører jeg meget gerne fra jer.
-      </p>
-      <div class="flex justify-center py-6">
-        <img class="size-1/6" src="/src/assets/images/mail.svg" alt="" />
-        <span>signelauridsen01@gmail.com</span>
-      </div>
-      <div>
-        <img src="/src/assets/images/mobil.svg" alt="" />
-        <span>+45 22632289</span>
+      <div class="lg:grid lg:grid-cols-2">
+        <div>
+          <Image
+            src={portræt2}
+            alt=""
+            class="w-[300px] mx-auto relative z-10 lg:w-[400px]"
+          />
+          <Image
+            src={logo_fyld}
+            alt=""
+            class="absolute top-[383%] left-[67%] w-[100px] z-10 lg:top-[365%] lg:left-[33%] lg:w-[130px] animate-spin-slow"
+          />
+        </div>
+        <div>
+          <p
+            class="text-mørkerød mx-14 my-8 leading-7 font-montseerat lg:mr-56 lg:pt-24"
+          >
+            Jeg ser frem til muligheden for at få indblik i jeres virksomheds
+            arbejdsmiljø gennem et praktikforløb. Det vil give mig en god chance
+            for at lære nyt og udvikle mig, samtidig med at jeg kan bidrage med
+            de kvalifikationer, jeg allerede besidder. <br />
+            <br /> Hvis I ser mine kompetencer som en værdi for jeres team, hører
+            jeg meget gerne fra jer.
+          </p>
+          <div class="text-center mb-6 lg:text-start lg:ml-14 lg:mb-8">
+            <Button>Mit CV</Button>
+          </div>
+          <div class="flex justify-center p-2 lg:justify-start lg:ml-12">
+            <Image src={mail} alt="" class="max-h-8 mr-4" />
+
+            <span class="text-rød font-montseerat"
+              >Mail: signelauridsen01@gmail.com</span
+            >
+          </div>
+          <div
+            class="flex justify-center p-2 pb-20 lg:justify-start lg:ml-12 lg:pt-2"
+          >
+            <Image src={mobil} alt="" class="max-h-8 mr-4 lg:max-h-10" />
+
+            <span class="text-rød font-montseerat lg:mt-2"
+              >Telefon: +45 22 63 22 89</span
+            >
+          </div>
+          <Image
+            src={bg_billede}
+            alt=""
+            class="absolute top-[290%] z-0 w-[1000px] h-auto left-[60%] rotate-180 overflow-hidden max-w-full"
+          />
+        </div>
       </div>
     </section>
   </article>

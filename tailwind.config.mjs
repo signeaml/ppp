@@ -11,6 +11,10 @@ export default {
       fontFamily: {
         // Tilføj Kulim Park fonten her
         kulim: ["Kulim Park", "sans-serif"],
+        montseerat: ["Montserrat", "sans-serif"],
+      },
+      animation: {
+        "spin-slow": "spin 12s linear infinite", // Tilføj en langsommere spin animation
       },
     },
   },
