@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Button_tidligere from "../components/Button_tidligere.astro";
 import Link from "../components/Link.astro";
 import { Image } from "astro:assets";
 import portræt1 from "../assets/images/portræt1.png";
@@ -20,7 +21,7 @@ import slide7 from "../assets/images/slide7.png";
 import slide8 from "../assets/images/slide8.png";
 ---
 
-<MainLayout title="Titel">
+<MainLayout title="Signe Lauridsen">
   <article class="bg-beige">
     <section class="lg:pb-24">
       <div class="relative w-full z-10 lg:grid lg:grid-cols-2">
@@ -263,6 +264,9 @@ import slide8 from "../assets/images/slide8.png";
           </div>
         </div>
       </div>
+      <div class="text-center pb-8 lg:pb-4">
+        <Button_tidligere>Se mere</Button_tidligere>
+      </div>
     </section>
     <section>
       <div class="flex items-center w-full py-6">
@@ -309,12 +313,21 @@ import slide8 from "../assets/images/slide8.png";
         </div>
         <div>
           <p
-            class="text-mørkerød mx-14 my-8 leading-7 font-montseerat lg:mr-56 lg:pt-24"
+            class="text-rød mx-14 leading-7 font-montseerat pt-10 text-xl lg:text-3xl"
           >
-            Jeg ser frem til muligheden for at få indblik i jeres virksomheds
-            arbejdsmiljø gennem et praktikforløb. Det vil give mig en god chance
-            for at lære nyt og udvikle mig, samtidig med at jeg kan bidrage med
-            de kvalifikationer, jeg allerede besidder. <br />
+            Klar på nye udfordringer
+          </p>
+          <p
+            class="text-mørkerød mx-14 my-8 leading-7 font-montseerat lg:mr-56 lg:pt-2"
+          >
+            Jeg søger en praktikplads, hvor jeg kan få mulighed for at udfolde
+            mine kompetencer inden for grafisk design, webdesign og visuel
+            kommunikation, samtidig med at jeg får chancen for at lære og
+            udvikle mig yderligere. Jeg brænder for at bidrage med kreative
+            løsninger, der både engagerer og inspirerer, og jeg ser frem til en
+            praktik, hvor jeg kan vokse fagligt og få indsigt i nye aspekter af
+            design og digitale medier.
+            <br />
             <br /> Hvis I ser mine kompetencer som en værdi for jeres team, hører
             jeg meget gerne fra jer.
           </p>
