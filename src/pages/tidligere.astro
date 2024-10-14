@@ -1,6 +1,7 @@
 ---
 import MainLayout from "../layouts/MainLayout.astro";
 import Button from "../components/Button.astro";
+import Button_tidligere from "../components/Button_tidligere.astro";
 import { Image } from "astro:assets";
 import foerste1 from "../assets/images/foerstesem1.png";
 import foerste2 from "../assets/images/foerstesem2.png";
@@ -18,62 +19,79 @@ import tredje4 from "../assets/images/tredjesem4.png";
 
 <MainLayout>
   <article class="">
-    <section>
+    <a href="/" target="_blank" rel="noopener noreferrer">
+      <div class="pl-8 pt-10 lg:mx-16 lg:pl-16 lg:pt-10">
+        <Button_tidligere>Tilbage</Button_tidligere>
+      </div>
+    </a>
+    <section class="mx-8 lg:mx-16">
       <h1
-        class="text-rød font-kulim text-5xl pl-8 lg:text-9xl lg:pl-16 lg:pt-16 animate__animated animate__fadeInLeft"
+        class="text-rød font-kulim text-5xl pl-8 pt-8 lg:text-9xl lg:pl-16 lg:pt-16 animate__animated animate__fadeInLeft"
       >
         Tidligere opgaver
       </h1>
     </section>
-    <section class="lg:grid lg:grid-cols-2 lg:my-16">
+
+    <section class="pt-8 mx-16 mb-24 lg:mb-0 lg:grid lg:grid-cols-2 lg:my-10">
       <div>
-        <h2 class="text-mørkerød lg:pt-16 lg:pl-16 lg:text-5xl">
+        <h2
+          class="font-kulim text-mørkerød text-3xl lg:pt-16 lg:pl-16 lg:text-5xl"
+        >
           Portfolie - eksamens opgave
         </h2>
 
-        <div class="flex items-center w-full max-w-lg lg:ml-24 lg:pt-4">
+        <div
+          class="flex items-center w-full max-w-lg py-4 lg:py-0 lg:ml-24 lg:pt-4"
+        >
           <hr class="border-t border-rød flex-grow" />
           <p class="text-rød lg:text-3xl mx-4">1. semester</p>
           <hr class="border-t border-rød flex-grow" />
         </div>
-        <p class="lg:ml-16 text-mørkerød lg:my-10">
+        <p class="my-4 lg:ml-16 text-mørkerød lg:my-10">
           Som min afsluttende eksamen på 1. semester, udviklede jeg en portfolie
           hjemmeside. Her er alle min opgaver fra 1. semester samlet.
         </p>
         <p class="lg:ml-16 text-rød">
           <strong>I løbet af semesteret arbejdede jeg med:</strong>
         </p>
-        <ul class="lg:ml-20 list-disc text-mørkerød">
+        <ul class="ml-4 lg:ml-20 list-disc text-mørkerød">
           <li>Kode i form af Html, CSS og Javascript</li>
           <li>Brugeroplevelse UX</li>
           <li>Animation</li>
           <li>Videoproduktion</li>
           <li>Illustrator</li>
         </ul>
-        <div class="lg:ml-16 lg:mt-8">
-          <Button>Besøg hjemmeside</Button>
-        </div>
-        <a href=""></a>
+        <a href="https://signeaml.github.io/portfolio/">
+          <div class="text-center my-6 lg:text-start lg:my-0 lg:ml-16 lg:mt-8">
+            <Button_tidligere>Besøg hjemmeside</Button_tidligere>
+          </div>
+        </a>
       </div>
-      <div class="lg:grid lg:grid-cols-2 lg:gap-4 lg:m-16 h-[400px]">
+      <div
+        class="grid grid-cols-2 gap-2 h-[200px] mb-10 lg:mb-0 lg:grid lg:grid-cols-2 lg:gap-4 lg:m-16 lg:h-[400px]"
+      >
         <Image src={foerste1} alt="" />
         <Image src={foerste2} alt="" />
         <Image src={foerste3} alt="" />
         <Image src={foerste4} alt="" />
       </div>
     </section>
-    <section class="lg:grid lg:grid-cols-2 lg:my-16">
+    <section class="pt-8 mx-16 mb-24 lg:mb-0 lg:grid lg:grid-cols-2 lg:my-16">
       <div>
-        <h2 class="text-mørkerød lg:pt-16 lg:pl-16 lg:text-5xl">
+        <h2
+          class="font-kulim text-mørkerød text-3xl lg:pt-16 lg:pl-16 lg:text-5xl"
+        >
           Re-design af virksomheds eksisterende hjemmeside
         </h2>
 
-        <div class="flex items-center w-full max-w-lg lg:ml-24 lg:pt-4">
+        <div
+          class="flex items-center w-full max-w-lg py-4 lg:py-0 lg:ml-24 lg:pt-4"
+        >
           <hr class="border-t border-rød flex-grow" />
           <p class="text-rød lg:text-3xl mx-4">2. semester</p>
           <hr class="border-t border-rød flex-grow" />
         </div>
-        <p class="lg:ml-16 text-mørkerød lg:my-10">
+        <p class="my-4 lg:ml-16 text-mørkerød lg:my-10">
           På dette projekt lavede vi research på konkurrenternes hjemmesider,
           inden for dette marked, for at finde udfordringerne på det
           eksisterende site. Ud fra dette optimerede vi hjemmesiden, så den
@@ -82,37 +100,44 @@ import tredje4 from "../assets/images/tredjesem4.png";
         <p class="lg:ml-16 text-rød">
           <strong>Her arbejdede jeg med:</strong>
         </p>
-        <ul class="lg:ml-20 list-disc text-mørkerød">
+        <ul class="ml-4 lg:ml-20 list-disc text-mørkerød">
           <li>Kode i form af Html og CSS</li>
           <li>Astro</li>
           <li>Supabase</li>
           <li>Figma</li>
           <li>SoMe - produktion</li>
         </ul>
-        <div class="lg:ml-16 lg:mt-8">
-          <Button>Besøg hjemmeside</Button>
-        </div>
-        <a href=""></a>
+        <a href="">
+          <div class="text-center my-6 lg:text-start lg:my-0 lg:ml-16 lg:mt-8">
+            <Button>Besøg hjemmeside</Button>
+          </div>
+        </a>
       </div>
-      <div class="lg:grid lg:grid-cols-2 lg:gap-4 lg:m-16 h-[400px]">
+      <div
+        class="grid grid-cols-2 gap-2 h-[200px] mb-10 lg:mb-0 lg:grid lg:grid-cols-2 lg:gap-4 lg:m-16 h-[400px]"
+      >
         <Image src={andet1} alt="" />
         <Image src={andet2} alt="" />
         <Image src={andet3} alt="" />
       </div>
     </section>
 
-    <section class="lg:grid lg:grid-cols-2 lg:my-16">
+    <section class="pt-8 mx-16 mb-24 lg:grid lg:grid-cols-2 lg:my-16">
       <div>
-        <h2 class="text-mørkerød lg:pt-16 lg:pl-16 lg:text-5xl">
+        <h2
+          class="font-kulim text-mørkerød text-3xl lg:pt-16 lg:pl-16 lg:text-5xl"
+        >
           Dansk og bæredygtigt redesign af hjemmeside
         </h2>
 
-        <div class="flex items-center w-full max-w-lg lg:ml-24 lg:pt-4">
+        <div
+          class="flex items-center w-full max-w-lg py-4 lg:py-0 lg:ml-24 lg:pt-4"
+        >
           <hr class="border-t border-rød flex-grow" />
           <p class="text-rød lg:text-3xl mx-4">3. semester</p>
           <hr class="border-t border-rød flex-grow" />
         </div>
-        <p class="lg:ml-16 text-mørkerød lg:my-10">
+        <p class="my-4 lg:ml-16 text-mørkerød lg:my-10">
           I dette projekt havde vi fokus på at arbejde med animationer og
           bæredygtighed. Dette gjorde vi ved at indføre vektorgrafik udarbejdet
           i Illustrator frem for brug af fotos.
@@ -120,18 +145,22 @@ import tredje4 from "../assets/images/tredjesem4.png";
         <p class="lg:ml-16 text-rød">
           <strong>Her arbejdede jeg med:</strong>
         </p>
-        <ul class="lg:ml-20 list-disc text-mørkerød">
+        <ul class="ml-4 lg:ml-20 list-disc text-mørkerød">
           <li>Kode i form af Html og CSS</li>
           <li>Illustrator</li>
           <li>Figma</li>
           <li>Tailwind CSS</li>
           <li>Motion one</li>
         </ul>
-        <div class="lg:ml-16 lg:mt-8">
-          <Button>Besøg hjemmeside</Button>
-        </div>
+        <a href="">
+          <div class="text-center my-6 lg:text-start lg:my-0 lg:ml-16 lg:mt-8">
+            <Button>Besøg hjemmeside</Button>
+          </div>
+        </a>
       </div>
-      <div class="lg:grid lg:grid-cols-2 lg:gap-4 lg:m-16 h-[400px]">
+      <div
+        class="grid grid-cols-2 gap-2 h-[200px] mb-10 lg:mb-0 lg:grid lg:grid-cols-2 lg:gap-4 lg:m-16 h-[400px]"
+      >
         <Image src={tredje1} alt="" />
         <Image src={tredje2} alt="" />
         <Image src={tredje3} alt="" />
